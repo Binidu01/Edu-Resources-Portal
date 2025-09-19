@@ -35,6 +35,7 @@ import {
 } from "lucide-react";
 
 type Tab = "resources" | "grades" | "subjects" | "mediums" | "categories";
+type OptionType = "grades" | "subjects" | "mediums" | "categories";
 
 interface Resource {
     id: string;
@@ -139,7 +140,7 @@ export default function AdminPanel() {
     };
 
     const handleAddOption = async (
-        type: "grades" | "subjects" | "mediums" | "categories"
+        type: OptionType
     ) => {
         if (!newOption.trim()) return toast.error("Enter a value first");
 
@@ -149,7 +150,7 @@ export default function AdminPanel() {
             setNewOption("");
             toast.success(`${type.slice(0, -1)} added successfully!`);
             await loadDropdowns();
-        } catch (error) {
+        } catch {
             toast.error("Failed to add option");
         } finally {
             setAddOptionLoading(false);
@@ -157,7 +158,7 @@ export default function AdminPanel() {
     };
 
     const handleDeleteOption = async (
-        type: "grades" | "subjects" | "mediums" | "categories",
+        type: OptionType,
         name: string
     ) => {
         setDeleteOptionLoading(name);
@@ -169,7 +170,7 @@ export default function AdminPanel() {
                 toast.success(`${type.slice(0, -1)} deleted successfully!`);
                 await loadDropdowns();
             }
-        } catch (error) {
+        } catch {
             toast.error("Failed to delete option");
         } finally {
             setDeleteOptionLoading(null);
@@ -248,7 +249,7 @@ export default function AdminPanel() {
         try {
             await signOut(auth);
             router.push("/login");
-        } catch (error) {
+        } catch {
             toast.error("Logout failed");
             setLogoutLoading(false);
         }
@@ -518,7 +519,7 @@ export default function AdminPanel() {
                                         {searchQuery ? (
                                             <div>
                                                 <Search className="w-12 h-12 mx-auto mb-4 opacity-50" />
-                                                <p className="text-lg">No resources found matching "{searchQuery}"</p>
+                                                <p className="text-lg">{`No resources found matching "${searchQuery}"`}</p>
                                                 <p className="text-sm mt-2">Try adjusting your search terms</p>
                                             </div>
                                         ) : (
@@ -616,7 +617,7 @@ export default function AdminPanel() {
                                         placeholder={`Add new ${tab.slice(0, -1)}`}
                                     />
                                     <button
-                                        onClick={() => handleAddOption(tab as any)}
+                                        onClick={() => handleAddOption(tab as OptionType)}
                                         disabled={addOptionLoading}
                                         className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-green-500/25 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                                     >
@@ -642,7 +643,7 @@ export default function AdminPanel() {
                                                 {searchQuery ? (
                                                     <div>
                                                         <Search className="w-12 h-12 mx-auto mb-4 opacity-50" />
-                                                        <p className="text-lg">No {tab.slice(0, -1)} found matching "{searchQuery}"</p>
+                                                        <p className="text-lg">{`No ${tab.slice(0, -1)} found matching "${searchQuery}"`}</p>
                                                         <p className="text-sm mt-2">Try adjusting your search terms</p>
                                                     </div>
                                                 ) : (
@@ -659,7 +660,7 @@ export default function AdminPanel() {
                                         >
                                             <span className="text-white font-medium">{item}</span>
                                             <button
-                                                onClick={() => handleDeleteOption(tab as any, item)}
+                                                onClick={() => handleDeleteOption(tab as OptionType, item)}
                                                 disabled={deleteOptionLoading === item}
                                                 className="flex items-center space-x-2 px-3 py-2 bg-red-500/20 hover:bg-red-500/30 border border-red-500/30 text-red-300 rounded-lg transition-all duration-300 hover:scale-105 opacity-0 group-hover:opacity-100 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                                             >
