@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  
+# Edu-Resources-Portal
 
-## Getting Started
+Comprehensive educational hub featuring textbooks, model papers, study notes, and video content for students and educators.
 
-First, run the development server:
+![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-f1e05a?style=for-the-badge&logo=javascript&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css&logoColor=white)
 
+[![Stars](https://img.shields.io/github/stars/Binidu01/Edu-Resources-Portal?style=for-the-badge&logo=github)](https://github.com/Binidu01/Edu-Resources-Portal/stargazers)
+[![Forks](https://img.shields.io/github/forks/Binidu01/Edu-Resources-Portal?style=for-the-badge&logo=github)](https://github.com/Binidu01/Edu-Resources-Portal/network/members)
+[![Issues](https://img.shields.io/github/issues/Binidu01/Edu-Resources-Portal?style=for-the-badge&logo=github)](https://github.com/Binidu01/Edu-Resources-Portal/issues)
+[![License](https://img.shields.io/github/license/Binidu01/Edu-Resources-Portal?style=for-the-badge)](https://github.com/Binidu01/Edu-Resources-Portal/blob/main/LICENSE)
+
+</div>
+
+---
+
+## 📋 Table of Contents
+
+- [🚀 Features](#-features)
+- [🛠️ Installation](#️-installation)
+- [💻 Usage](#-usage)
+- [🏗️ Built With](#️-built-with)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [📞 Contact](#-contact)
+- [🙏 Acknowledgments](#-acknowledgments)
+
+---
+
+## 🚀 Features
+
+- ✨ Modern and intuitive user interface
+- 🔥 High performance and scalability
+- 🛡️ Secure and reliable
+- 📱 Responsive design
+- 🌐 Cross-platform compatibility
+
+## 🛠️ Installation
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Quick Start
 ```bash
+# Clone the repository
+git clone undefined.git
+
+# Navigate to project directory
+cd undefined
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Basic usage example
+edu-resources-portal --help
+```
 
-## Learn More
+For more detailed usage instructions, please refer to our [documentation](https://edu-resources-portal.vercel.app).
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **TypeScript** - 98.9%
+- **JavaScript** - 0.6%
+- **CSS** - 0.5%
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the Project
+2. Create your Feature Branch `git checkout -b feature/AmazingFeature`
+3. Commit your Changes `git commit -m Add some AmazingFeature`
+4. Push to the Branch `git push origin feature/AmazingFeature`
+5. Open a Pull Request
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+**Binidu01** - [@Binidu01](https://github.com/Binidu01)
+
+Project Link: [https://github.com/Binidu01/Edu-Resources-Portal](https://github.com/Binidu01/Edu-Resources-Portal)
+
+🌐 Website: [https://edu-resources-portal.vercel.app](https://edu-resources-portal.vercel.app)
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors who have helped this project grow
+- Special thanks to the open source community
+- Built with ❤️ and lots of ☕
+
+---
+
+<div align="center">
+  
+**[⬆ Back to Top](#edu-resources-portal)**
+
+Made with ❤️ by [Binidu01](https://github.com/Binidu01)
+
+⭐ Star this repo if you find it useful!
+
+</div>
